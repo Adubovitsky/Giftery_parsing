@@ -14,7 +14,7 @@ for page in range(1,12):
 
     list = []
     cards_on_page = card_block.findAll("a", class_="gift-card-v2 catalog__list-item gift-card-v2--fill-size gift-card-v2--hover gift-card-v2--shadow")
-    print("Пожалуйста, подождите. Идет обработка запроса...")
+    print(f"Пожалуйста, подождите. Идет обработка страницы {page} ...")
     for card in cards_on_page:
         dict={}
         name = card.find("div", "gift-card-v2__title").text
